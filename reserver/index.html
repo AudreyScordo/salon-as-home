@@ -13,8 +13,83 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
   <link rel="apple-touch-icon-precomposed" href="./apple-touch-icon.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbxRKXxLqL31MD7NFGHHs6xXdJppFivaqYckAAaJv1dUxSLybiufng0q_gl5J_TGqDVl/exec">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fbf6f1;
+      --panel: #fffaf7;
+      --line: rgba(185, 141, 112, 0.22);
+      --text: #2c2421;
+      --muted: #7d6a60;
+      --accent: #382821;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at top left, rgba(209, 174, 147, 0.24), transparent 28%),
+        radial-gradient(circle at right 20%, rgba(218, 201, 188, 0.2), transparent 22%),
+        linear-gradient(180deg, #fffdfb 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family: "Georgia", "Times New Roman", serif;
+    }
+
+    .card {
+      width: min(420px, 100%);
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: rgba(255, 250, 247, 0.94);
+      box-shadow: 0 20px 60px rgba(85, 57, 42, 0.12);
+      text-align: center;
+    }
+
+    img {
+      width: 104px;
+      height: 104px;
+      border-radius: 24px;
+      display: block;
+      margin: 0 auto 18px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.45;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fffaf7;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+  </style>
 </head>
-<body></body>
+<body>
+  <main class="card">
+    <img src="./apple-touch-icon.png" alt="Logo Le Salon AS">
+    <h1>Reserver</h1>
+    <p>Ajoute d'abord cette page a l'ecran d'accueil, puis ouvre la reservation.</p>
+    <a href="https://script.google.com/macros/s/AKfycbxRKXxLqL31MD7NFGHHs6xXdJppFivaqYckAAaJv1dUxSLybiufng0q_gl5J_TGqDVl/exec">Ouvrir la reservation</a>
+  </main>
+</body>
 </html>
-  
